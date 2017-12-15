@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDR_BASE_LCD	constants.h	7;"	d
+BUS_H	bus.h	2;"	d
+Bus	bus.cpp	/^Bus::Bus(sc_core::sc_module_name name) : sc_core::sc_module(name) {$/;"	f	class:Bus
+CONSTANT_H	constants.h	2;"	d
+FILES	Makefile	/^FILES=${wildcard *.h *.cpp}$/;"	m
+GENERATOR_H	Generator.h	2;"	d
+Generator	Generator.cpp	/^Generator::Generator(sc_core::sc_module_name name) :$/;"	f	class:Generator
+IMG_SIZE	constants.h	14;"	d
+LCDC	LCDC.cpp	/^LCDC::LCDC(sc_module_name name, const sc_time &display_period)$/;"	f	class:LCDC
+LCDC	LCDC.h	/^struct LCDC : sc_core::sc_module {$/;"	s
+LCDC_ADDR_REG	LCDC_registermap.h	4;"	d
+LCDC_H	LCDC.h	6;"	d
+LCDC_INT_REG	LCDC_registermap.h	6;"	d
+LCDC_REGISTER_MAP_H	LCDC_registermap.h	2;"	d
+LCDC_START_REG	LCDC_registermap.h	5;"	d
+MEMORY_H	memory.h	2;"	d
+MEM_ADDR	constants.h	4;"	d
+MEM_SIZE	constants.h	5;"	d
+Memory	memory.cpp	/^Memory::Memory(sc_core::sc_module_name name, unsigned int size)$/;"	f	class:Memory
+ROM	ROM.cpp	/^ROM::ROM(sc_module_name name) : sc_module(name) {$/;"	f	class:ROM
+ROM	ROM.h	/^struct ROM : public sc_core::sc_module {$/;"	s
+ROM_H	ROM.h	2;"	d
+ROM_SIZE	ROM.h	6;"	d
+ROOT	Makefile	/^ROOT=..\/..$/;"	m
+SC_MODULE	Generator.h	/^SC_MODULE(Generator) {$/;"	f
+SC_MODULE	bus.h	/^SC_MODULE(Bus) {$/;"	f
+SC_MODULE	memory.h	/^SC_MODULE(Memory) {$/;"	f
+SIZE_BASE_LCD	constants.h	8;"	d
+SRCS	Makefile	/^SRCS=${wildcard *.cpp}$/;"	m
+TARGET	Makefile	/^TARGET=run.x$/;"	m
+TEST	Generator.cpp	5;"	d	file:
+VIDE0_MEM_OFF	constants.h	10;"	d
+VIDEO_MEM_BASE_ADDR	constants.h	11;"	d
+WITH_X11	Makefile	/^WITH_X11=YesPlease$/;"	m
+addr_register	LCDC.h	/^	unsigned long addr_register;$/;"	m	struct:LCDC
+blanche	Generator.cpp	6;"	d	file:
+buffer	LCDC.h	/^	char *buffer;$/;"	m	struct:LCDC
+cmap	LCDC.h	/^	Colormap cmap;$/;"	m	struct:LCDC
+color_table	LCDC.h	/^	int color_table[256];$/;"	m	struct:LCDC
+compute	LCDC.cpp	/^void LCDC::compute() {$/;"	f	class:LCDC
+content	ROM.h	/^	ensitlm::data_t *content;$/;"	m	struct:ROM
+depth	LCDC.h	/^	int depth;$/;"	m	struct:LCDC
+display	LCDC.h	/^	Display *display;$/;"	m	struct:LCDC
+display_int	LCDC.h	/^	sc_core::sc_out<bool> display_int;$/;"	m	struct:LCDC
+draw	LCDC.cpp	/^void LCDC::draw() {$/;"	f	class:LCDC
+end_of_elaboration	LCDC.cpp	/^void LCDC::end_of_elaboration() {$/;"	f	class:LCDC
+end_of_elaboration	bus.cpp	/^void Bus::end_of_elaboration() {$/;"	f	class:Bus
+fill_buffer	LCDC.cpp	/^void LCDC::fill_buffer() {$/;"	f	class:LCDC
+gc	LCDC.h	/^	GC gc;$/;"	m	struct:LCDC
+image	LCDC.h	/^	XImage *image;$/;"	m	struct:LCDC
+init_colormap	LCDC.cpp	/^void LCDC::init_colormap() {$/;"	f	class:LCDC
+initiator_socket	LCDC.h	/^	ensitlm::initiator_socket<LCDC> initiator_socket;$/;"	m	struct:LCDC
+int_register	LCDC.h	/^	unsigned long int_register;$/;"	m	struct:LCDC
+kHeight	LCDC.cpp	/^const int LCDC::kHeight = 240;$/;"	m	class:LCDC	file:
+kHeight	LCDC.h	/^	static const int kHeight;$/;"	m	struct:LCDC
+kWidth	LCDC.cpp	/^const int LCDC::kWidth = 320;$/;"	m	class:LCDC	file:
+kWidth	LCDC.h	/^	static const int kWidth;$/;"	m	struct:LCDC
+map	bus.cpp	/^void Bus::map(ensitlm::compatible_socket &port, ensitlm::addr_t start_addr,$/;"	f	class:Bus
+period	LCDC.h	/^	sc_core::sc_time period;$/;"	m	struct:LCDC
+print_addr_map	bus.cpp	/^void Bus::print_addr_map() {$/;"	f	class:Bus
+read	LCDC.cpp	/^tlm::tlm_response_status LCDC::read(const ensitlm::addr_t &a,$/;"	f	class:LCDC
+read	ROM.cpp	/^tlm::tlm_response_status ROM::read(const ensitlm::addr_t &a,$/;"	f	class:ROM
+read	bus.cpp	/^tlm::tlm_response_status Bus::read(ensitlm::addr_t a, ensitlm::data_t &d) {$/;"	f	class:Bus
+read	memory.cpp	/^tlm::tlm_response_status Memory::read(ensitlm::addr_t a, ensitlm::data_t &d) {$/;"	f	class:Memory
+sc_main	sc_main.cpp	/^int sc_main(int argc, char **argv){$/;"	f
+screen	LCDC.h	/^	int screen;$/;"	m	struct:LCDC
+socket	ROM.h	/^	ensitlm::target_socket<ROM> socket;$/;"	m	struct:ROM
+start_event	LCDC.h	/^	sc_core::sc_event start_event;$/;"	m	struct:LCDC
+started	LCDC.h	/^	bool started;$/;"	m	struct:LCDC
+target_socket	LCDC.h	/^	ensitlm::target_socket<LCDC> target_socket;$/;"	m	struct:LCDC
+testimg	ROM_content.h	/^uint32_t testimg[] = {$/;"	v
+thread	Generator.cpp	/^void Generator::thread(void){$/;"	f	class:Generator
+window	LCDC.h	/^	Window window;$/;"	m	struct:LCDC
+write	LCDC.cpp	/^tlm::tlm_response_status LCDC::write(const ensitlm::addr_t &a,$/;"	f	class:LCDC
+write	ROM.h	/^	tlm::tlm_response_status write(const ensitlm::addr_t &a,$/;"	f	struct:ROM
+write	bus.cpp	/^tlm::tlm_response_status Bus::write(ensitlm::addr_t a, ensitlm::data_t d) {$/;"	f	class:Bus
+write	memory.cpp	/^tlm::tlm_response_status Memory::write(ensitlm::addr_t a, ensitlm::data_t d) {$/;"	f	class:Memory
+~LCDC	LCDC.cpp	/^LCDC::~LCDC() {$/;"	f	class:LCDC
+~Memory	memory.cpp	/^Memory::~Memory() {$/;"	f	class:Memory
+~ROM	ROM.cpp	/^ROM::~ROM() {$/;"	f	class:ROM
